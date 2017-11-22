@@ -1,3 +1,3 @@
 # Playbook Constructs
 
-Helpful constructs and paradigms for building [playbooks](http://kb.threatconnect.com/customer/en/portal/articles/2744775-playbooks) in [ThreatConnect](https://app.threatconnect.com).
+When I say "construct", I am referring to two or more Playbook apps which are connected in a way that allow a user to accomplish a common goal (e.g. requesting content from a website) in a robust, (relatively) simple, effective, and maintainable manner.
