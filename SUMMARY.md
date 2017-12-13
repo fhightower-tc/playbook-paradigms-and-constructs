@@ -12,5 +12,6 @@ Floyd Hightower
     * [Trigger Passback](constructs/trigger_passback.md)
     * [Variable Initialization](constructs/variable_initialization.md)
     * [HTTP Client Response Handling](constructs/http_client_response_handling.md)
+    * [JSON Path Handling](constructs/json_handling.md)
 * [Paradigms](paradigms/README.md)
     * [Playbook Layout](paradigms/layout.md)
