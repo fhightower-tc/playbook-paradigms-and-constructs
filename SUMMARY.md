@@ -15,3 +15,4 @@ Floyd Hightower
     * [JSON Path Handling](constructs/json_handling.md)
 * [Paradigms](paradigms/README.md)
     * [Playbook Layout](paradigms/layout.md)
+    * [Naming](paradigms/naming.md)]
