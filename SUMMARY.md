@@ -15,5 +15,6 @@ Floyd Hightower
     * [Trigger Passback](constructs/trigger_passback.md)
     * [Variable Initialization](constructs/variable_initialization.md)
 * [Paradigms](paradigms/README.md)
-    * [Naming](paradigms/naming.md)]
+    * [Naming](paradigms/naming.md)
     * [Playbook Layout](paradigms/layout.md)
+* [Gotchas](gotchas/README.md)
