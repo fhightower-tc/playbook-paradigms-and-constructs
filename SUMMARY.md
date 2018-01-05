@@ -9,10 +9,11 @@ Enjoy,
 Floyd Hightower
 
 * [Constructs](constructs/README.md)
-    * [If-Merge](constructs/if_merge.md)
+    * [If-Merge: Merging Conditional Paths](constructs/if_merge.md)
+    * [JSON Path Filtering](constructs/json_filtering.md)
+    * [JSON-to-Join: Converting String Array to String](constructs/json_to_join.md)
     * [Trigger Passback](constructs/trigger_passback.md)
     * [Variable Initialization](constructs/variable_initialization.md)
-    * [JSON Path Handling](constructs/json_handling.md)
 * [Paradigms](paradigms/README.md)
-    * [Playbook Layout](paradigms/layout.md)
     * [Naming](paradigms/naming.md)]
+    * [Playbook Layout](paradigms/layout.md)
