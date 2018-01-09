@@ -1,6 +1,7 @@
 # Naming
 
-As far as naming conventions are concerned, I have two pieces of advice:
+Here are a few thoughts on naming conventions:
 
-1. Be consistent. No matter what you decide to do, stick with it.
-2. If you do change the name of an app, don't make it too specific. If you make it to specific if (read when) you have to change the playbook itself, you will have to also change the title (or more likely you will forget to change the title and the title will not describe what the app actually does). For example, if you have a timer trigger that runs every Monday, don't name it "Run every monday", but instead name it something like "Run weekly". This way, if you change the day on which the app runs, you don't have to change the title of the app as well.
+When it comes to naming variables, **be consistent**. No matter what you decide to do, stick with it. The variable `badDomain` works just as well as `bad_domain` (although one of them requires an extra character). Just be consistent.
+
+Concerning the names of playbook apps, if you do change the name from the default name, you need to find a balance between being too ambiguous and too descriptive. You don't want to be too ambiguous because this isn't helpful, but you also don't want to be too descriptive because then you will have to change the name of the app if the app's functionality every changes. For example, if you are designing a playbook that runs once a week, a good name for the "Timer" trigger (which kicks off the playbook on a schedule) would be "Run Playbook Weekly". A name like "Run Playbook on Monday at 12:34" is probably too descriptive; if you ever change the day and/or time at which the Timer runs, you will also have to change the name. Changing an app's name isn't hard, but it is easy to forget to do so which means that the names of the apps become obsolete and confusing over time.

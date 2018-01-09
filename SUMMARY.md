@@ -16,5 +16,6 @@ Floyd Hightower
     * [Variable Initialization](constructs/variable_initialization.md)
 * [Paradigms](paradigms/README.md)
     * [Naming](paradigms/naming.md)
+    * [Creating Quality Error Messages](paradigms/error_messages.md)
     * [Playbook Layout](paradigms/layout.md)
 * [Gotchas](gotchas/README.md)
