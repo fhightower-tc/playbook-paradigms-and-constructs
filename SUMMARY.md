@@ -9,13 +9,14 @@ Enjoy,
 Floyd Hightower
 
 * [Constructs](constructs/README.md)
+    * [Making HTTP Requests to Retrieve JSON](constructs/http_request_json.md)
     * [If-Merge: Merging Conditional Paths](constructs/if_merge.md)
     * [JSON Path Filtering](constructs/json_filtering.md)
     * [JSON-to-Join: Converting String Array to String](constructs/json_to_join.md)
     * [Trigger Passback](constructs/trigger_passback.md)
     * [Variable Initialization](constructs/variable_initialization.md)
 * [Paradigms](paradigms/README.md)
-    * [Naming](paradigms/naming.md)
     * [Creating Quality Error Messages](paradigms/error_messages.md)
+    * [Naming](paradigms/naming.md)
     * [Playbook Layout](paradigms/layout.md)
 * [Gotchas](gotchas/README.md)
