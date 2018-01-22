@@ -6,8 +6,8 @@ Pass a string value into a "Regex Extract" app that check for the regex `.+` (wh
 
 ![string_empty](_images/string_empty_1.png)
 
-Then, join the string array output from the regex app (this [converts the string array to a string](./json_to_join/)). Then run it through an "If" operator that checks if the string is not equal to `null`.
+Then, join the string array output from the regex app (this [converts the string array to a string](./json_to_join.html)). Then run it through an "If" operator that checks if the string is not equal to `null`.
 
-![string_empty](_images/string_empty_1.png)
+![string_empty](_images/string_empty_2.png)
 
 This works because the "Regex Extract" app will return `null` if there was no match for the regex (in this case, `.+` which means the string is empty).
