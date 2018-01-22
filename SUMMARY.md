@@ -9,10 +9,11 @@ Enjoy,
 Floyd Hightower
 
 * [Constructs](constructs/README.md)
-    * [Making HTTP Requests to Retrieve JSON](constructs/http_request_json.md)
+    * [How to Check if a String is Empty](constructs/string_empty.md)
     * [If-Merge: Merging Conditional Paths](constructs/if_merge.md)
     * [JSON Path Filtering](constructs/json_filtering.md)
     * [JSON-to-Join: Converting String Array to String](constructs/json_to_join.md)
+    * [Making HTTP Requests and Visually Selecting JSON Paths](constructs/http_request_json.md)
     * [Trigger Passback](constructs/trigger_passback.md)
     * [Variable Initialization](constructs/variable_initialization.md)
 * [Paradigms](paradigms/README.md)
