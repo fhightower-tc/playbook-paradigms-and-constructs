@@ -8,6 +8,10 @@ Enjoy,
 
 Floyd Hightower
 
+* [Paradigms](paradigms/README.md)
+    * [Creating Quality Error Messages](paradigms/error_messages.md)
+    * [Naming](paradigms/naming.md)
+    * [Playbook Layout](paradigms/layout.md)
 * [Constructs](constructs/README.md)
     * [How to Check if a String is Empty](constructs/string_empty.md)
     * [If-Merge: Merging Conditional Paths](constructs/if_merge.md)
@@ -16,8 +20,5 @@ Floyd Hightower
     * [Making HTTP Requests and Visually Selecting JSON Paths](constructs/http_request_json.md)
     * [Trigger Passback](constructs/trigger_passback.md)
     * [Variable Initialization](constructs/variable_initialization.md)
-* [Paradigms](paradigms/README.md)
-    * [Creating Quality Error Messages](paradigms/error_messages.md)
-    * [Naming](paradigms/naming.md)
-    * [Playbook Layout](paradigms/layout.md)
+* [Helpful Tips and Tricks](tips/README.md)
 * [Gotchas](gotchas/README.md)
