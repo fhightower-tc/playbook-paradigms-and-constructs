@@ -1,4 +1,4 @@
-## JSON Filtering
+# JSON Filtering
 
 Filtering JSON is an important part of many apps, especially those which make [HTTP requests](http_client_response_handling.html). To filter JSON, use the "Json Path" app to select a portion of the JSON.
 

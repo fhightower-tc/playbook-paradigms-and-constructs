@@ -1,4 +1,4 @@
-## Json-to-Join: Converting String Array to String
+# Json-to-Join: Converting String Array to String
 
 If you have a string array that you want to convert into a string, you can use the "Join Array" app.
 
