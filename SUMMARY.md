@@ -19,6 +19,7 @@ Floyd Hightower
     * [JSON-to-Join: Converting String Array to String](constructs/json_to_join.md)
     * [Making HTTP Requests and Visually Selecting JSON Paths](constructs/http_request_json.md)
     * [Trigger Passback](constructs/trigger_passback.md)
+    * [Using Breakpoints to Debug Playbooks](constructs/breakpoints.md)
     * [Variable Initialization](constructs/variable_initialization.md)
 * [Helpful Tips and Tricks](tips/README.md)
 * [Gotchas](gotchas/README.md)
