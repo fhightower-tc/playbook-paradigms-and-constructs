@@ -13,6 +13,7 @@ Floyd Hightower
     * [Naming](paradigms/naming.md)
     * [Playbook Layout](paradigms/layout.md)
 * [Constructs](constructs/README.md)
+    * [Collecting and Processing Data in Playbooks](constructs/collect_serialize_process.md)
     * [How to Check if a String is Empty](constructs/string_empty.md)
     * [If-Merge: Merging Conditional Paths](constructs/if_merge.md)
     * [JSON Path Filtering](constructs/json_filtering.md)
