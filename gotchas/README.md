@@ -1,5 +1,11 @@
 # Gotchas: Common Mistakes and Errors
 
+- Do **NOT** leave a playbook running with a logging level of `DEBUG` or `TRACE` if you are not actively debugging the playbook. This unnecessarily eats up memory and can limit the performance of other playbooks. Be sure to raise the logging level when you are done debugging a playbook. Alternatively, you can also change the logging level of a single playbook app or a section of the playbook:
+
+![changing playbook app logging](_images/change_app_logging_A.png)
+
+![changing playbook app logging](_images/change_app_logging_B.png)
+
 - A "Merge" operator only takes inputs of the same type.
 - When storing content as JSON in the datastore, make sure the JSON has double-quotes.
 - If you run into an error creating an indicator, check out the list of [common errors](https://docs.threatconnect.com/en/latest/common_errors.html#creating-indicators) in the documentation.
