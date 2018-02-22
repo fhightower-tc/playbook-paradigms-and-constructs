@@ -23,4 +23,5 @@ Floyd Hightower
     * [Using Breakpoints to Debug Playbooks](constructs/breakpoints.md)
     * [Variable Initialization](constructs/variable_initialization.md)
 * [Helpful Tips and Tricks](tips/README.md)
+    * [Datastore Tips](tips/datastore.md)
 * [Gotchas](gotchas/README.md)
