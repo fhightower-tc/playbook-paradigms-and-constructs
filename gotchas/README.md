@@ -16,3 +16,4 @@
   ```
   "size": 50
   ```
+- If you have a playbook that triggers when a document is created, it is possible that the playbook will run before the content of the document is uploaded. Thus, if you have a playbook that is triggers when a document is created and need the document's contents, you may need to add a delay and re-request the document to get its contents.
