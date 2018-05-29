@@ -1,4 +1,4 @@
-# Tips for Working with the Datastore
+# Introduction to the Datastore
 
 ## Datastore Structure
 
