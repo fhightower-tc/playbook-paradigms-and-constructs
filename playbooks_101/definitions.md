@@ -27,4 +27,4 @@ Here is a helpful picture detailing these basic classifications:
 
 ## Blue and Orange
 
-All playbook apps have two possible output paths. One is blue and one in orange. Execution is passed along the orange line if the app fails. It is passed along the blue line if the app executes successfully.
+All playbook apps have two possible output paths. One is blue and one is orange. Execution is passed along the orange line if the app fails. It is passed along the blue line if the app executes successfully.
