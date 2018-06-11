@@ -18,6 +18,7 @@ Floyd Hightower
     * [Collecting and Processing Data in Playbooks](constructs/collect_serialize_process.md)
     * [CSV Parser](constructs/csv_parser.md)
     * [How to Check if a String is Empty](constructs/string_empty.md)
+    * [Human-in-the-Loop Workflows](constructs/human_in_the_loop.md)
     * [If-Merge: Merging Conditional Paths](constructs/if_merge.md)
     * [JSON Path Filtering](constructs/json_filtering.md)
     * [JSON-to-Join: Converting String Array to String](constructs/json_to_join.md)
