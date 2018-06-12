@@ -4,6 +4,8 @@ A collection of paradigms and constructs for building [playbooks](http://kb.thre
 
 This is currently a living document and should not, by any means, be considered canon. Many of the tips and gotchas captured in this document may be out of date as improvements are made to playbooks. These are just helpful tips and hints that will help you build more robust, effective, and maintainable Playbooks. Available as a gitbook here: [https://pb-constructs.hightower.space/playbooks/](https://pb-constructs.hightower.space/playbooks/).
 
+Feel free to [contact me](https://hightower.space/contact/) with any questions, comments, or ideas.
+
 Enjoy,
 
 Floyd Hightower
