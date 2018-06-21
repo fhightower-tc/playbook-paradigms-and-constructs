@@ -4,6 +4,8 @@ A collection of paradigms and constructs for building [playbooks](http://kb.thre
 
 This is currently a living document and should not, by any means, be considered canon. Many of the tips and gotchas captured in this document may be out of date as improvements are made to playbooks. These are just helpful tips and hints that will help you build more robust, effective, and maintainable Playbooks. Available as a gitbook here: [https://pb-constructs.hightower.space/playbooks/](https://pb-constructs.hightower.space/playbooks/).
 
+Feel free to [contact me](https://hightower.space/contact/) with any questions, comments, or ideas.
+
 Enjoy,
 
 Floyd Hightower
@@ -18,9 +20,11 @@ Floyd Hightower
     * [Collecting and Processing Data in Playbooks](constructs/collect_serialize_process.md)
     * [CSV Parser](constructs/csv_parser.md)
     * [How to Check if a String is Empty](constructs/string_empty.md)
+    * [Human-in-the-Loop Workflows](constructs/human_in_the_loop.md)
     * [If-Merge: Merging Conditional Paths](constructs/if_merge.md)
     * [JSON Path Filtering](constructs/json_filtering.md)
     * [JSON-to-Join: Converting String Array to String](constructs/json_to_join.md)
+    * [Making a Playbook Fail](constructs/pb_fail.md)
     * [Making HTTP Requests and Visually Selecting JSON Paths](constructs/http_request_json.md)
     * [Merge Operator](constructs/merge.md)
     * [Retrieving the Value of a Custom Metric](constructs/get_metric_value.md)
