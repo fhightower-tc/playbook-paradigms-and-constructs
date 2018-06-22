@@ -7,3 +7,9 @@ This is currently a living document and should not, by any means, be considered 
 Enjoy,
 
 Floyd Hightower
+
+---
+
+# Recent Updates
+
+- Adding link to [http://playbooks.hightower.space/](http://playbooks.hightower.space/) in the [tips](https://pb-constructs.hightower.space/playbooks/helpful-tips-and-tricks) section.
