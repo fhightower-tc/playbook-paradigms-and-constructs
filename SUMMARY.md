@@ -11,7 +11,7 @@ Enjoy,
 Floyd Hightower
 
 * [Playbooks 101](playbooks_101/README.md)
-    * [Definitions](playbooks_101/definitions.md)
+    * [Introduction](playbooks_101/introduction.md)
 * [Paradigms](paradigms/README.md)
     * [Creating Quality Messages](paradigms/quality_messages.md)
     * [Naming](paradigms/naming.md)

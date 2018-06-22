@@ -1,4 +1,4 @@
-# Definitions
+# Introduction to Playbooks
 
 When learning playbooks, there are a few important definitions and classifications to keep in mind. On this page, we're going to start at a high level and work our way down.
 
