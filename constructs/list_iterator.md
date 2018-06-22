@@ -1,57 +1,98 @@
 # List Iteration
 
-## The Problem
+Iterating through lists in playbooks (just like a basic iterator in programming) involves 3 main components:
 
-To iterate through lists in playbooks we have 2 major components.
+    1. Initialization
+    2. Iterator
+    3. (optional) Break
 
-Let us take a very simple example. Say that you have a list of URLs and you would like to send data to each one recording the responses in a nicely formatted manner. For instance, we have generated the following list of URLs:
+![PB List iterator Diagram](_images/list_iterator_diagram.png)
+
+We begin with a parent playbook that collects or builds some list. We then have an _action_ playbook that takes each item in the list as input. We pass the list and the url of the action playbook to the initialization component. In the action playbook we have a component to keep iterating through the list until the end of the list is reached. Optionally, the user can use the break component to exit the loop earlier if so desired. Pretty simple!
+
+## Example Use Case
+
+Let us begin with a basic use case. Say your boss assigns you the task of building a system to process a new intel feed and extract indicators for your organization. Let us also assume you wish to stay away from programming. Lucky for you, our iterator method in playbooks has made such a task quite trivial.
+
+
+### The Data
 ```json
-["https://sandbox.threatconnect.com/api/playbook/eecf7c31-b38c-4e1e-b94f-fac56745c9f5",
- "https://sandbox.threatconnect.com/api/playbook/e892175c-df92-4a50-9239-83fcbb7d1e71",
- "https://sandbox.threatconnect.com/api/playbook/c51faf5e-d7e7-4391-8c5f-3f9945869448",
- "https://sandbox.threatconnect.com/api/playbook/7077869b-e569-497a-9aa0-852ee4b5ded2",
- "https://sandbox.threatconnect.com/api/playbook/7077869b-e569-497a-9aa0-3f9945819448"]
+{
+    "Event": {
+        "info": "Update on Pawn Storm: New Targets and Politically Motivated Campaigns",
+        "publish_timestamp": "1515851051",
+        "timestamp": "1515850537",
+        "analysis": "2",
+        "Attribute": [{
+            "comment": "",
+            "category": "Network activity",
+            "uuid": "5a5a0b04-198c-4190-9f1a-8d1cc0a8ab16",
+            "timestamp": "1515850500",
+            "to_ids": true,
+            "value": "adfs.senate.group",
+            "object_relation": null,
+            "type": "hostname"
+        }, {
+            "comment": "",
+            "category": "Network activity",
+            "uuid": "5a5a0b04-4d44-463f-81a9-8d1cc0a8ab16",
+            "timestamp": "1515850500",
+            "to_ids": true,
+            "value": "adfs-senate.email",
+            "object_relation": null,
+            "type": "domain"
+        }
+        //so on and so forth...
+        ]
+    }
+}
 ```
-and now we need to send some data (lets just say hello for now) and record the response, stopping execution if we get a bad response. 
 
-_Server 1 sends back "good", 2 sends "ok", 3 also sends "good", and 4 sends "bad"_
+Looking at the data feed, we see that it makes sense to iterate throught the `Attribute` list and create the appropriate indicators in ThreatConnect. We probably also want to add a short description to each one as well. Additionally, if we encounter an issue with a particular indicator, we want to stop the process and log the error.
 
 ## The Solution
 
-The solution assumes that two playbooks exist:
-    1. The parent playbook which creates or obtains the list
-    2. The action playbook which _acts_ on each item of the list
-
 Lets start with the parent playbook as such:
 
-![Example Parent Playbook for List Iteration](_images/list_iterator_parent_playbook.png)
+![Example Parent Playbook for List Iteration](_images/list_iterator_parent_pb.png)
 
-Nothing too interesting going on here. We are just taking in the list from the body of http link (the method of obtaining or generating a list is negligable here) and are setting a variable to hold the data we would like to send ("hello"). The logger is used to log the output of the list iteration process (server responses). Please notice how the Iterator Initialization Component is configured:
+After fetching the data feed using an http client and pulling out the desired array `Attribute`, we set a description to be applied to each indicator and call the iterator initialization component like so...
 
-![Iterator Initialize Component Config](_images/list_iterator_initialize_config.png)
+![Iterator Initialize Component Config](_images/list_iterator_initialization_config.png)
 
-1. **Extra Data** - This field is meant to store some arbitrary data to be passed down to the action playbook. In this case it is being used to pass the data we would like to send to each server.
-2. **Input Array** - The array we would like to iterate through.
-3. **Action PlayBook Link** - The action playbook which will be executed on the items (URLs).
+The iterator initialization takes 4 input, some of which are optional:
 
-So far so good. Let us take a look at the action playbook:
+1. **Extra Data** (optional) - This field is meant to store some arbitrary data to be passed down to the action playbook. In this case it is being used to pass the description we would like to see applied to each indicator. However, this can become more useful if you are passing in json structs. More on that later...
+2. **Action PlayBook Link** - The action playbook which will be executed on each of the items in the list.
+3. **Output Data** (optional) - Any output data we would like to pre-set. This can be useful when you want to append some results over each iteration and have some initial value. Again, lets not worry about these features for now.
+4. **Input Array** - The array we would like to iterate through.
 
-![Action Playbook](_images/list_iterator_action_playbook.png)
+So far so good. Lets take a look at the action playbook doing the real work...
 
-Again, nothing too complicated. The individual item (URL) is being passed via body of the http link trigger, the extra data ("hello") is being pulled out of the header of the http link and the user just needs to pass along the DataStore ID to the iterate component. Everything in between is up to the user. For now we are just sending "hello" to the url and, if it is not a "bad" response, concatenating the response to the output. If it is a bad response we have a remove lock component which will be explained shortly but for now lets take a look at the core component, Iterate.
+![Example Action PlayBook](_images/list_iterator_action_pb.png)
 
-![Iterate Config](_images/list_iterator_iterate_config.png)
+Nothing too complicated going on here but just make note of the things we are pulling out of the http link trigger:
+
+- (_header_) **extra_data:** The indicator description in our case
+- (_header_) **ds_id:** A unique DataStore ID that is required to be passed down to the iterator component (generated by initialization)
+- (_body_) **item:** The current item in the list that the iterator has pointed us to
+
+We are simply pulling out the _type_ and _value_ out of the json item passed in and creating the appropriate indicators. If there is an error we use the break component to exit the loop, otherwise, the iterator component continues looping through the list.
+
+The configuration for the iterator component is quiet simple:
+
+![Iterate Config](_images/list_iterator_iterator_config.png)
+
+We simply pass through the *ds_id* variable extracted from the header of the http link trigger and the output/extra data. Since we are using the same description for each indicator, we pass the extra data as is. We also set the output to a simple success message. The output is eventually returned to the parent playbook.
+
+If something goes wrong, say an indicator fails to create for whatever reason, we wish to break out of the loop and set the result to an informative error message.
+
+For this we have the break component configured as such:
+
+![Break Config](_images/list_iterator_break_config.png)
  
-Thats it. Just pass it the DataStore ID and (any) results generated.
+Again, pass through the *ds_id* as required by the iterator system and set an error message as the result to be passed back to the parent playbook.
 
-The remove lock component is even simpler. It is responsible for communicating with the calling component (initialize iterator) to stop waiting for the iteration to complete and to resume execution in the parent playbook. Otherwise, if never called, the iterator will keep going until the end of the list is reached (naturally).
+When we run this playbook, all indicators are created until one of them fails (due to being part of the system-wide exclusion list) as such:
 
-![Remove Lock Config](_images/list_iterator_remove_lock_config.png)
-
-Just pass the DataStore ID to remove the lock.
-
-At the end, the logger in our parent playbook prints the following:
-
-`Server Satus was good - Server Satus was ok - Server Satus was good -`
-
-Voila! Each response corresponding to the URLs in the list.
+![Final Log](_images/list_iterator_log.png)
