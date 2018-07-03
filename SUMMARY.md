@@ -25,6 +25,7 @@ Floyd Hightower
     * [JSON Path Filtering](constructs/json_filtering.md)
     * [JSON-to-Join: Converting String Array to String](constructs/json_to_join.md)
     * [Making a Playbook Fail](constructs/pb_fail.md)
+    * [Array Iteration](constructs/array_iterator.md)
     * [Making HTTP Requests and Visually Selecting JSON Paths](constructs/http_request_json.md)
     * [Merge Operator](constructs/merge.md)
     * [Retrieving the Value of a Custom Metric](constructs/get_metric_value.md)
