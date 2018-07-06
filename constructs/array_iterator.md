@@ -1,5 +1,7 @@
 # Array Iteration
 
+The components used in this construct are available [here](https://gitlab.com/cezhunter/Iterator_Playbook_Components/).
+
 Iterating through arrays in playbooks (just like a basic iterator in programming) involves 3 main components:
 
     1. Initialization
@@ -99,3 +101,5 @@ When we run this playbook, all indicators are created until one of them fails, c
 
 `"There was a problem creating link  :
 http://blog.trendmicro.com/trendlabs-security-intelligence/update-pawn-storm-new-targets-politically-motivated-campaigns/"`
+
+It works! The playbook components for iterating through arrays are available [here](https://gitlab.com/cezhunter/Iterator_Playbook_Components/).
