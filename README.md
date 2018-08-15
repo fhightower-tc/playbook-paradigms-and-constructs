@@ -12,5 +12,5 @@ Floyd Hightower
 
 # Recent Updates
 
+- Adding link to open-source, ThreatConnect resources [here](https://tc.hightower.space/).
 - Adding article on how to iterate through an array with playbooks [here](https://pb-constructs.hightower.space/playbooks/constructs/array-iteration).
-- Adding link to [http://playbooks.hightower.space/](http://playbooks.hightower.space/) in the [tips](https://pb-constructs.hightower.space/playbooks/helpful-tips-and-tricks) section.
