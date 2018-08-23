@@ -19,6 +19,7 @@
   In order to store content like this, you would need to use an app like the one here: [https://github.com/ThreatConnect-Inc/threatconnect-playbooks/tree/master/apps/TCPB_-_JSON_Builder](https://github.com/ThreatConnect-Inc/threatconnect-playbooks/tree/master/apps/TCPB_-_JSON_Builder) to the create the json which gets created in the datastore or join the array and store the array as a string in the datastore.
 - Apps like the "**Get ThreatConnect Group**" and "**Get ThreatConnect Indicator**" apps only return 100 results.
 - If you have a playbook that **triggers when a document is created**, it is possible that the playbook will run before the content of the document is uploaded. Thus, if you have a playbook that is triggers when a document is created and need the document's contents, you may need to add a delay and re-request the document to get its contents.
+- When requesting a playbook using an HTTP Trigger link, make sure the trigger does **not** have a `/` at the end of the link. Trying to trigger a playbook with the following links **will not work**: `https://my.threatconnect.com/api/playbook/123456/`, `https://my.threatconnect.com/api/playbook/123456/?id=2`. The following links **will work properly**: `https://my.threatconnect.com/api/playbook/123456`, `https://my.threatconnect.com/api/playbook/123456?id=2`.
 
 ## Datastore Gotchas
 
