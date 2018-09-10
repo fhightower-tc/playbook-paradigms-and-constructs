@@ -1,6 +1,6 @@
 # JSON Filtering
 
-Filtering JSON is an important part of many apps, especially those which make [HTTP requests](http_client_response_handling.html). To filter JSON, use the "Json Path" app to select a portion of the JSON.
+Filtering JSON is an important part of many apps, especially those which make [HTTP requests](https://pb-constructs.hightower.space/playbooks/constructs/http_request_json). To filter JSON, use the "Json Path" app to select a portion of the JSON.
 
 For example, let's say you had the following JSON returned from an API endpoint (this is from the [SafeBrowsing API](https://developers.google.com/safe-browsing/v4/lookup-api)):
 

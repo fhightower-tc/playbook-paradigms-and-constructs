@@ -36,7 +36,7 @@ Custom metrics can be used to validate investments in a variety of ways. For exa
 
 ### Tracking Quotas
 
-Many systems, like malware analysis engines and scanners, have a daily and/or monthly quota. Custom metrics can help you keep track of quotas. For example, if you have a daily quota of 10 submissions to a system, you could increment a custom metric every time you use a submission. This way if you want to know how many submissions you have used, you can simply [check the value of the metric](../constructs/retrieving-the-value-of-a-custom-metric).
+Many systems, like malware analysis engines and scanners, have a daily and/or monthly quota. Custom metrics can help you keep track of quotas. For example, if you have a daily quota of 10 submissions to a system, you could increment a custom metric every time you use a submission. This way if you want to know how many submissions you have used, you can simply [check the value of the metric](https://pb-constructs.hightower.space/playbooks/constructs/get_metric_value).
 
 ## Resources
 

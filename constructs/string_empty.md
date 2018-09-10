@@ -6,7 +6,7 @@ Pass a string value into a "Regex Extract" app that check for the regex `.+` (wh
 
 ![string_empty](_images/string_empty_1.png)
 
-Then, join the string array output from the regex app (this [converts the string array to a string](./json_to_join.html)). Then run it through an "If" operator that checks if the string is not equal to `null`.
+Then, join the string array output from the regex app (this [converts the string array to a string](https://pb-constructs.hightower.space/playbooks/constructs/json_to_join)). Then run it through an "If" operator that checks if the string is not equal to `null`.
 
 ![string_empty](_images/string_empty_2.png)
 
