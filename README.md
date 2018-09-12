@@ -12,5 +12,6 @@ Floyd Hightower
 
 # Recent Updates
 
+- Adding paradigm on how to structure playbook systems [here](https://pb-constructs.hightower.space/playbooks/paradigms/structuring-playbook-systems)
 - Adding link to open-source, ThreatConnect resources [here](https://tc.hightower.space/).
 - Adding article on how to iterate through an array with playbooks [here](https://pb-constructs.hightower.space/playbooks/constructs/array-iteration).
