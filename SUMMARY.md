@@ -16,6 +16,7 @@ Floyd Hightower
     * [Creating Quality Messages](paradigms/quality_messages.md)
     * [Naming](paradigms/naming.md)
     * [Playbook Layout](paradigms/layout.md)
+    * [Structuring Playbook Systems](paradigms/structuring-playbook-systems.md)
 * [Constructs](constructs/README.md)
     * [Array Iteration](constructs/array_iterator.md)
     * [Collecting and Processing Data in Playbooks](constructs/collect_serialize_process.md)
