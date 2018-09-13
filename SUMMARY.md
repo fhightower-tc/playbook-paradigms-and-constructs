@@ -21,6 +21,7 @@ Floyd Hightower
     * [Array Iteration](constructs/array_iterator.md)
     * [Collecting and Processing Data in Playbooks](constructs/collect_serialize_process.md)
     * [CSV Parser](constructs/csv_parser.md)
+    * [HTTP Trigger Response Codes](constructs/http_response_codes.md)
     * [How to Check if a String is Empty](constructs/string_empty.md)
     * [Human-in-the-Loop Workflows](constructs/human_in_the_loop.md)
     * [If-Merge: Merging Conditional Paths](constructs/if_merge.md)
