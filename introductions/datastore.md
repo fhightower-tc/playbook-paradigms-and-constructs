@@ -16,7 +16,7 @@ If you are trying to retrieve content from the datastore, you can leave the `ent
 
 ## Developer Tokens
 
-In order to access the datastore outside of playbooks, you will need a developer token. You can get one in the ThreatConnect UI by hovering over the *gear icon in the upper right corner > Org Settings > Apps*. Then click the menu with three vertical dots on the right side of the screen and select *Get Developer Token*. This is necessary if you are trying to access the datastore via a REST client or a script outside of playbooks (which is helpful when testing/designing playbooks).
+In order to access the datastore outside of playbooks, you will need a developer token. You can **get a developer token in the ThreatConnect UI** by hovering over the *gear icon in the upper right corner > Org Settings > Apps*. Then click the menu with three vertical dots on the right side of the screen and select *Get Developer Token*. This is necessary if you are trying to access the datastore via a REST client or a script outside of playbooks (which is helpful when testing/designing playbooks).
 
 ## Additional Resources
 
