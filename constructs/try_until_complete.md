@@ -35,13 +35,3 @@ If we request the first playbook for a bit and then it finally succeeds before t
 You can find documentation for the playbook to support this construct [here](https://tc.hightower.space/post/playbooks/repeat_until_success/).
 
 You can find the actual playbook [here](https://github.com/ThreatConnect-Inc/threatconnect-playbooks/tree/master/playbooks/repeat-until-success).
-
-
-
-
-
-I have a playbook to do this described here:  . I call it the "Repeat Until Successful" playbook (not the best name, but that's not important).
-
-Basically, it makes a request to another playbook (we'll call it "Playbook A"); if Playbook A fails, the Repeat Until Successful playbook will wait for a certain amount of time and then try the request again until Playbook A succeeds (there is a counter in the Repeat Until Successful so that it won't keep trying to run Playbook A forever). If playbook A succeeds, 
-
-https://sandbox.threatconnect.com/api/playbook/9adeeff8-5a23-4d89-bcd5-98102105f2b8?max=10&count=0&link=https://sandbox.threatconnect.com/api/playbook/a2d8406d-e0d8-4199-ba80-1bfb439360d0&finalLink=https://sandbox.threatconnect.com/api/playbook/638049bb-a3b3-4b37-92ea-07e762b4ef76
