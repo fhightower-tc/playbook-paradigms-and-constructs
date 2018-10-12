@@ -32,6 +32,7 @@ Floyd Hightower
     * [Merge Operator](constructs/merge.md)
     * [Retrieving the Value of a Custom Metric](constructs/get_metric_value.md)
     * [Trigger Passback](constructs/trigger_passback.md)
+    * [Try Until Complete](constructs/try_until_complete.md)
     * [Using Breakpoints to Debug Playbooks](constructs/breakpoints.md)
     * [Variable Initialization](constructs/variable_initialization.md)
 * [Introductions](introductions/README.md)
