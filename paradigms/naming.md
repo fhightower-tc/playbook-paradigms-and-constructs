@@ -1,6 +1,45 @@
-# Naming
+# Names, Descriptions, and Labels
 
-Here are a few thoughts on naming conventions:
+We want to be informative and consistent with our naming conventions and descriptions to maintain a clean and organized work environment. Here are a few guidelines to follow that will help you to accomplish this.
+
+##Playbooks and Components
+
+###Names
+The first rule in naming your playbook is to make it as informative as possible. Short vague names don't serve your team justice and certainly not when your playbooks become large and complex.
+
+We want to use proper capitalization and spaces while using descriptive names that give a little insight one _what_ the playbook does.
+
+Some good examples:
+
+* `Wayback Machine Query`
+* `JOEs Sandbox Sample Submission`
+* `Email and Indicator Extract`
+
+Bad:
+
+* `wayback_pb`
+* `joes submit`
+* `Email Indicators`
+
+Ideally, we want to store as much info as to what the playbook does in the name while keeping it reasonably brief.
+
+###Labels
+
+Labels are a great tool offered to increase your productivity and make your playbook environment a little more organized.
+
+For playbooks and components that are designed to fit into a larger overarching system, it is a good idea to add labels with their project/system names. This makes it easier to search for and browse playbooks by project.
+
+If you have an owner specific playbook or component (only works or creates data in a owner), it is also a good idea to add the owner as a label.
+
+If you work in the same ThreatConnect instance as other teams that are also building playbooks, adding labels with your team name is another good way to stay organized.
+
+Labels should follow the same convention as naming (spaces, capitalization, and descriptive).
+
+### Descriptions
+
+This should be very straightforward. Write good descriptions that discusses not just _what_ a playbook or component does but also _how_ it fits in your team's goals or processes!
+
+## Variables
 
 When it comes to naming variables, **be consistent**. No matter what you decide to do, stick with it. The variable `badDomain` works just as well as `bad_domain` (although one of them requires an extra character). Just be consistent.
 
