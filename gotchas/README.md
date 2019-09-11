@@ -20,6 +20,10 @@
 - Apps like the "**Get ThreatConnect Group**" and "**Get ThreatConnect Indicator**" apps only return 100 results.
 - If you have a playbook that **triggers when a document is created**, it is possible that the playbook will run before the content of the document is uploaded. Thus, if you have a playbook that is triggers when a document is created and need the document's contents, you may need to add a delay and re-request the document to get its contents.
 - When requesting a playbook using an HTTP Trigger link, make sure the trigger does **not** have a `/` at the end of the link. Trying to trigger a playbook with the following links **will not work**: `https://my.threatconnect.com/api/playbook/123456/`, `https://my.threatconnect.com/api/playbook/123456/?id=2`. The following links **will work properly**: `https://my.threatconnect.com/api/playbook/123456`, `https://my.threatconnect.com/api/playbook/123456?id=2`.
+- Passing **the success and failure paths from the same app** into another app/operator (even the merge operator) will not work.
+
+![changing playbook app logging](../constructs/_images/same_app_to_merge.png)
+
 
 ## Datastore Gotchas
 
