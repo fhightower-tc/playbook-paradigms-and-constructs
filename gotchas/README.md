@@ -22,8 +22,7 @@
 - When requesting a playbook using an HTTP Trigger link, make sure the trigger does **not** have a `/` at the end of the link. Trying to trigger a playbook with the following links **will not work**: `https://my.threatconnect.com/api/playbook/123456/`, `https://my.threatconnect.com/api/playbook/123456/?id=2`. The following links **will work properly**: `https://my.threatconnect.com/api/playbook/123456`, `https://my.threatconnect.com/api/playbook/123456?id=2`.
 - Passing **the success and failure paths from the same app** into another app/operator (even the merge operator) will not work.
 
-![changing playbook app logging](../constructs/_images/same_app_to_merge.png)
-
+![](../constructs/_images/same_app_to_merge.png)
 
 ## Datastore Gotchas
 

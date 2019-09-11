@@ -20,4 +20,4 @@ Downstream apps can then use the output of the merge app as shown below.
 
 Note that even a merge operator will **not** work if given the success and failure paths from the same app (passing the success and failure paths from the same app into another app/operator never works).
 
-![passing the success and failure paths from the same app into another app/operator (even merge operators) never works](_images/same_app_to_merge.png)
+![](_images/same_app_to_merge.png)
