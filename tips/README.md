@@ -4,6 +4,7 @@
 - When using a **regex** in the "**Find and Replace**" playbook app, you can use `$1`, `$2`, etc. in the replace value to insert matched groups. For example, if you find the regex `(\S)\.(\S)`, this will find a non-whitespace character, followed by a period, followed by a non-whitespace character. Let's say you wanted replace the period with `[.]` (perhaps you are [defanging](https://ioc-fang.github.io/) indicators). To do this, you can use `$1[.]$2` as the replace value. The `$1` will be replaced with the non-whitespace character before the period and `$2` will be replaced with the non-whitespace character after the period.
 - There is a website with some helpful resources at [http://playbooks.hightower.space/](http://playbooks.hightower.space/).
 - The following 'magic variables' can be used in playbooks:
+
 ```
 // pulls the list of organizations and directly resolves to the organization name.
 ${OWNERS}
