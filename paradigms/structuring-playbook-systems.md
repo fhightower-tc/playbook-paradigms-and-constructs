@@ -4,7 +4,7 @@ When structuring a playbook system, you have a lot of options for how you lay it
 
 Let's say you want to write a playbook to [triage false positives](https://tc.hightower.space/post/playbooks/false-positive-triage/). You could lay this system out like:
 
-![It is normal to create a playbook with a trigger inside of it](_images/option1.png)
+![It is common to create a playbook with a trigger inside of it](_images/option1.png)
 
 This layout is pretty normal. You create a playbook with a specific kind of trigger within it. The problem with this strategy is that it is difficult to use that playbook with a different trigger. What if you used a user-action trigger, but now you want to use an http link trigger to use the same functionality? We don't want to have two copies of the same playbook running around just with different triggers, so we have a problem.
 
