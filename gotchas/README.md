@@ -23,6 +23,11 @@
 - Passing **the success and failure paths from the same app** into another app/operator (even the merge operator) will not work.
 
 ![](../constructs/_images/same_app_to_merge.png)
+- When using an iterator operator, if the execution path does not return to the iterator operator, the iterator will fail.
+
+![This will fail if the if/else statement exits on the orange path](_images/failing_iterator.png)
+
+![This will succeed even if the if/else statement exits on the orange path](_images/succeeding_iterator.png)
 
 ## Datastore Gotchas
 
