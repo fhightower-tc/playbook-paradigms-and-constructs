@@ -1,5 +1,7 @@
 # Array Iteration
 
+**Note:** As of recent versions of ThreatConnect, there is an [iterator operator](https://kb.threatconnect.com/customer/portal/articles/2976058) natively in playbooks. You should use the iterator operator rather the component described below.
+
 The components used in this construct are available [here](https://gitlab.com/cezhunter/Iterator_Playbook_Components/).
 
 Iterating through arrays in playbooks (just like a basic iterator in programming) involves 3 main components:
