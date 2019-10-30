@@ -34,4 +34,4 @@ If we request the first playbook for a bit and then it finally succeeds before t
 
 You can find documentation for the playbook to support this construct [here](https://tc.hightower.space/post/playbooks/repeat_until_success/).
 
-You can find the actual playbook [here](https://github.com/ThreatConnect-Inc/threatconnect-playbooks/tree/master/playbooks/repeat-until-success).
+You can find the actual playbook [here](https://github.com/ThreatConnect-Inc/threatconnect-playbooks/tree/master/playbooks/TCPB-HT-Repeat%20until%20Success).
