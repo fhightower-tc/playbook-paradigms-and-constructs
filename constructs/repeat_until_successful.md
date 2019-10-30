@@ -1,4 +1,4 @@
-# Try Until Complete
+# Repeat Until Successful
 
 There are many instances in which you want to keep trying something until it is done (or just want to wait until certain conditions are met). This construct provides a way for you to do this.
 
