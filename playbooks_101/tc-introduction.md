@@ -45,7 +45,7 @@ Indicator types include:
 
 ## Tracks
 
-These are very powerful, but more information is coming on these soon.
+More information on tracks is coming soon.
 
 ## Victims
 
