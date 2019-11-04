@@ -12,6 +12,7 @@ Floyd Hightower
 
 * [Playbooks 101](playbooks_101/README.md)
     * [Introduction](playbooks_101/introduction.md)
+    * [ThreatConnect Data Model Introduction](playbooks_101/tc-introduction.md)
 * [Paradigms](paradigms/README.md)
     * [Creating Quality Messages](paradigms/quality_messages.md)
     * [Naming](paradigms/naming.md)
